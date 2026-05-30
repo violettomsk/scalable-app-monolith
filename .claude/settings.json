@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "defaultMode": "default"
+  },
+  "model": "haiku",
+  "teammates": {
+    "defaultModel": "sonnet"
+  }
+}
