@@ -1,0 +1,12 @@
+# backend
+backend/.gradle/
+backend/build/
+# web
+web/node_modules/
+web/dist/
+# mobile
+mobile/.dart_tool/
+mobile/build/
+# misc
+*.log
+.env

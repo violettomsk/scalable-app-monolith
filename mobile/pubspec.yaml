@@ -1,0 +1,16 @@
+name: mobile
+description: "{{PROJECT_NAME}} mobile app"
+publish_to: "none"
+version: 0.1.0+1
+environment:
+  sdk: ^3.12.0
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.5.0
+  dio: ^5.7.0
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true

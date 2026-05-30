@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/appdb}
+    username: ${DB_USER:app}
+    password: ${DB_PASSWORD:app}
+  jpa:
+    hibernate.ddl-auto: validate   # schema owned by migrations, not Hibernate
+    open-in-view: false
+  flyway:
+    enabled: true
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${OIDC_ISSUER:http://localhost:8081/realms/app}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+server:
+  port: 8080
