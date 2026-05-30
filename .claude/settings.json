@@ -1,9 +1,59 @@
 {
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
   "permissions": {
-    "defaultMode": "default"
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Read",
+      "Edit",
+      "Write",
+      "Glob",
+      "Grep",
+      "Bash(cd *)",
+      "Bash(git status)",
+      "Bash(git log *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git branch)",
+      "Bash(git checkout *)",
+      "Bash(git diff *)",
+      "Bash(git stash *)",
+      "Bash(./gradlew *)",
+      "Bash(gradle *)",
+      "Bash(npm *)",
+      "Bash(yarn *)",
+      "Bash(flutter *)",
+      "Bash(dart *)",
+      "Bash(java *)",
+      "Bash(javac *)",
+      "Bash(ls *)",
+      "Bash(pwd)",
+      "Bash(mkdir *)",
+      "Bash(mkdir -p *)",
+      "Bash(cp *)",
+      "Bash(cat *)",
+      "Bash(echo *)",
+      "Bash(find *)",
+      "Bash(grep *)",
+      "Bash(curl *)",
+      "Bash(wget *)",
+      "Bash(ps *)",
+      "Bash(which *)",
+      "Bash(touch *)"
+    ],
+    "deny": [
+      "Bash(rm -rf *)",
+      "Bash(rm -f *)",
+      "Bash(git push *)",
+      "Bash(git reset --hard *)",
+      "Bash(git clean -fd)",
+      "Bash(sudo *)",
+      "Bash(dd *)"
+    ]
   },
   "model": "haiku",
-  "teammates": {
+  "teammate": {
     "defaultModel": "sonnet"
   }
 }
